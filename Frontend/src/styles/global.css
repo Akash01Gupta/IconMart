@@ -1,0 +1,366 @@
+/* global.css */
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set base font family and background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container utility class */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Button styles */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: #2874f0;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0b59d0;
+}
+
+/* Form inputs */
+input, select, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Links */
+a {
+  color: #2874f0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Flex utility */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Spacing helpers */
+.mt-1 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 1rem; }
+p-1 { padding: 1rem; }
+
+/* ===== CSS Reset (Minimal) ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Base Body Styles ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Links ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #4f46e5; /* Indigo-600 */
+}
+
+/* ===== Buttons ===== */
+button {
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:focus {
+  outline: 2px solid #2563eb; /* Blue-600 */
+}
+
+/* ===== Utilities ===== */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+/* ===== Header Specific (can override with Tailwind) ===== */
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav a {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== Forms ===== */
+input, select, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #3b82f6; /* Blue-500 */
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+/* ===== Toasts, Errors, etc. ===== */
+.error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.success {
+  color: green;
+  font-size: 0.875rem;
+}
+
+
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set base font and background color */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.6;
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #0d6efd; /* Bootstrap-style blue */
+}
+
+/* Utility spacing for containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Headings style */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+/* Button basic style fallback (for custom buttons) */
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Scrollbar (optional, modern browsers) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Loader Spinner */
+.loader {
+  border-top-color: #3498db;
+  animation: spin 1s linear infinite;
+  border-radius: 50%;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #e5e7eb; /* gray-200 (Tailwind default) */
+  border-top-color: #3498db; /* spinner top color */
+  width: 4rem; /* h-16 */
+  height: 4rem; /* w-16 */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global font and color setup */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #3498db;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Button base */
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Custom loader style (if not using inline styles) */
+.loader {
+  border-top-color: #3498db;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Form inputs */
+input,
+textarea,
+select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Flash message (if needed later) */
+.flash-success {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.flash-error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
